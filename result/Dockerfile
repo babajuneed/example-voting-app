@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM docker.io/library/debian:bullseye-slim AS base
 
 # add curl for healthcheck
 RUN apt-get update \
