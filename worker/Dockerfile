@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/core/sdk:3.1 AS builder
+FROM mcr.microsoft.com/dotnet/sdk:8.0-jammy-arm64v8 AS builder
 
 WORKDIR /Worker
 COPY src/Worker/Worker.csproj .
