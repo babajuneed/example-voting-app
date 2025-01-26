@@ -1,5 +1,8 @@
 FROM docker.io/library/debian:bullseye-slim AS base
 
+# Install Node.js
+RUN apt-get update && apt-get install -y nodejs npm
+
 # add curl for healthcheck
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
